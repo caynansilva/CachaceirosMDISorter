@@ -23,7 +23,7 @@
   </header>
   <div class="container text-center">
     <div class="divider d-flex align-items-center my-2"></div>
-    <form>
+    <form onsubmit="return false;">
       <div class="divider d-flex align-items-center my-2"></div>
       <div class="row">
         <div class="col">
@@ -43,18 +43,27 @@
           <input type="text" class="form-control" id="nomeCachaceiro" placeholder="Nome do Cachaceiro" aria-label="Nome do Cachaceiro"
             aria-describedby="basic-addon2">
         </div>
+        <div class="col">
+          <label class="fw-bold" for="email">Class:</label>
+          <select class="form-select" id="selectClass">
+            <option selected>Select a Class</option>
+            <option value="tank">Tank</option>
+            <option value="healer">Healer</option>
+            <option value="dps">DPS</option>
+          </select>
+        </div>
       </div>
       <div class="divider d-flex align-items-center my-2"></div>
       <div class="row">
         <div class="col">
-          <button type="submit" class="btn btn-danger" onclick="sortearPlayer()">Sortear o Cachaceiro!</button>
+          <button type="submit" class="btn btn-danger" onclick="sortearPlayer()">Sortear Jogador</button>
         </div>
       </div>
     </form>
   </div>
   <div class="divider d-flex align-items-center my-2"></div>
   <div class="container text-center">
-    <form>
+    <form onsubmit="return false;">
       <div class="row h-100">
         <div class="col">
           <label class="fw-bold" for="exampleFormControlTextarea1">Time A</label>
